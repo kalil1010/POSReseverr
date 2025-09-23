@@ -1,0 +1,3 @@
+rootProject.name = 'RemoteNFC_2.0'
+
+include 'lib'
