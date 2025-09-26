@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <TextView
+        android:gravity="start|center_vertical"
+        android:id="@+id/device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Device ID"
+        android:layout_weight="1"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Device Name"
+        android:layout_weight="1"
+        android:layout_marginEnd="16dp"/>
+    <LinearLayout
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="137dp"
+        android:layout_height="match_parent">
+        <Button
+            android:textColor="@android:color/black"
+            android:id="@+id/match_button"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="匹  配"/>
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/unmatch_button"
+            android:background="@android:color/holo_red_light"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消匹配"/>
+    </LinearLayout>
+</LinearLayout>

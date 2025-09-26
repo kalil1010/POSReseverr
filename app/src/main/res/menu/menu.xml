@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:enabled="false"
+        android:id="@+id/tagModeButton"
+        android:visible="false"
+        android:title="@string/t"
+        app:showAsAction="withText|always"/>
+    <item
+        android:enabled="false"
+        android:id="@+id/replayModeButton"
+        android:visible="false"
+        android:title="@string/p"
+        app:showAsAction="withText|always"/>
+    <item
+        android:id="@+id/proxyButton"
+        android:visible="false"
+        android:title="@string/return_to_proxy_mode"
+        app:showAsAction="withText|always"/>
+    <item
+        android:id="@+id/scanButton"
+        android:visible="false"
+        android:title="@string/scanButton"/>
+    <item
+        android:id="@+id/getNewTokenButton"
+        android:visible="false"
+        android:title="@string/getNewTokenButton"/>
+    <item
+        android:id="@+id/settingsButton"
+        android:title="@string/settings"/>
+</menu>

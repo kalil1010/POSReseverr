@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="connection_type_entries">
+        <item>TCP</item>
+        <item>KCP</item>
+    </array>
+    <array name="connection_type_values">
+        <item>TCP</item>
+        <item>KCP</item>
+    </array>
+</resources>

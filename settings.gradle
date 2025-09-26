@@ -1,0 +1,3 @@
+rootProject.name = '内部专用'
+
+include 'app'

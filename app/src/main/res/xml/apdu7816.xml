@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apdu cat="iso7816">
+    <cmds>
+        <class val="90">
+            <ins
+                name="Authenticate (keyNo)"
+                spec="DESFire"
+                val="0A"/>
+            <ins
+                name="Change Key Settings"
+                spec="DESFire"
+                val="54"/>
+            <ins
+                name="Get Key Settings"
+                spec="DESFire"
+                val="45"/>
+            <ins
+                name="Change Key (KeyNo)"
+                spec="DESFire"
+                val="C4"/>
+            <ins
+                name="Get Key Version (KeyNo)"
+                spec="DESFire"
+                val="64"/>
+            <ins
+                name="Create Application"
+                spec="DESFire"
+                val="CA"/>
+            <ins
+                name="Delete Application"
+                spec="DESFire"
+                val="DA"/>
+            <ins
+                name="Get Application IDs"
+                spec="DESFire"
+                val="6A"/>
+            <ins
+                name="Select Application"
+                spec="DESFire"
+                val="5A"/>
+            <ins
+                name="Format PICC"
+                spec="DESFire"
+                val="FC"/>
+            <ins
+                name="Get Version"
+                spec="DESFire"
+                val="60"/>
+            <ins
+                name="More Data"
+                spec="DESFire"
+                val="AF"/>
+            <ins
+                name="Get File IDs"
+                spec="DESFire"
+                val="6F"/>
+            <ins
+                name="Get File Settings"
+                spec="DESFire"
+                val="F5"/>
+            <ins
+                name="Change File Settings"
+                spec="DESFire"
+                val="5F"/>
+            <ins
+                name="Create Std Data File"
+                spec="DESFire"
+                val="CD"/>
+            <ins
+                name="Create Backup Data File"
+                spec="DESFire"
+                val="CB"/>
+            <ins
+                name="Create Value File"
+                spec="DESFire"
+                val="CC"/>
+            <ins
+                name="Create Linear Record File"
+                spec="DESFire"
+                val="C1"/>
+            <ins
+                name="Create Cyclic Record File"
+                spec="DESFire"
+                val="C0"/>
+            <ins
+                name="Delete File"
+                spec="DESFire"
+                val="DF"/>
+            <ins
+                name="Read Data"
+                spec="DESFire"
+                val="BD"/>
+            <ins
+                name="Write Data"
+                spec="DESFire"
+                val="3D"/>
+            <ins
+                name="Get Value"
+                spec="DESFire"
+                val="6C"/>
+            <ins
+                name="Credit"
+                spec="DESFire"
+                val="0C"/>
+            <ins
+                name="Debit"
+                spec="DESFire"
+                val="DC"/>
+            <ins
+                name="Litmited Credit"
+                spec="DESFire"
+                val="1C"/>
+            <ins
+                name="Write Record"
+                spec="DESFire"
+                val="3B"/>
+            <ins
+                name="Read Records"
+                spec="DESFire"
+                val="BB"/>
+            <ins
+                name="Clear Record File"
+                spec="DESFire"
+                val="EB"/>
+            <ins
+                name="Commit Transaction"
+                spec="DESFire"
+                val="C7"/>
+            <ins
+                name="Abort Transaction"
+                spec="DESFire"
+                val="A7"/>
+        </class>
+        <class val="0">
+            <ins
+                name="Deactivate File"
+                spec="ISO7816"
+                val="4"/>
+            <ins
+                name="Erase Record"
+                spec="ISO7816"
+                val="0C"/>
+            <ins
+                name="Erase Binary"
+                spec="ISO7816"
+                val="0E"/>
+            <ins
+                name="Erase Binary"
+                spec="ISO7816"
+                val="0F"/>
+            <ins
+                name="Perform SCQL Operation"
+                spec="ISO7816"
+                val="10"/>
+            <ins
+                name="Perform Transaction Operation"
+                spec="ISO7816"
+                val="12"/>
+            <ins
+                name="Perform User Operation"
+                spec="ISO7816"
+                val="14"/>
+            <ins
+                name="Verify PIN"
+                spec="ISO7816"
+                val="20"/>
+            <ins
+                name="Verify PIN"
+                spec="ISO7816"
+                val="21"/>
+            <ins
+                name="Manage Security Environment"
+                spec="ISO7816"
+                val="22"/>
+            <ins
+                name="Change PIN"
+                spec="ISO7816"
+                val="24"/>
+            <ins
+                name="Disable PIN"
+                spec="ISO7816"
+                val="26"/>
+            <ins
+                name="Enable PIN"
+                spec="ISO7816"
+                val="28"/>
+            <ins
+                name="Perform Security Operation"
+                spec="ISO7816"
+                val="2A"/>
+            <ins
+                name="Reset Retry Counter"
+                spec="ISO7816"
+                val="2C"/>
+            <ins
+                name="Activate File"
+                spec="ISO7816"
+                val="44"/>
+            <ins
+                name="Generate Public Key Pair"
+                spec="ISO7816"
+                val="46"/>
+            <ins
+                name="Manage Channel"
+                spec="ISO7816"
+                val="70"/>
+            <ins
+                name="Load Key File Lock Manage Channel"
+                spec="ISO7816"
+                val="76"/>
+            <ins
+                name="Initialize PSAM For Update Install Internal Authenticate"
+                spec="ISO7816"
+                val="80"/>
+            <ins
+                name="External Authenticate"
+                spec="ISO7816"
+                val="82"/>
+            <ins
+                name="Get Challenge"
+                spec="ISO7816"
+                val="84"/>
+            <ins
+                name="General Authenticate"
+                spec="ISO7816"
+                val="86"/>
+            <ins
+                name="General Authenticate"
+                spec="ISO7816"
+                val="87"/>
+            <ins
+                name="Internal Authenticate"
+                spec="ISO7816"
+                val="88"/>
+            <ins
+                name="Search Binary"
+                spec="ISO7816"
+                val="A0"/>
+            <ins
+                name="Search Binary"
+                spec="ISO7816"
+                val="A1"/>
+            <ins
+                name="Search Record"
+                spec="ISO7816"
+                val="A2"/>
+            <ins
+                name="Select"
+                spec="ISO7816"
+                val="A4"/>
+            <ins
+                name="Read Binary"
+                spec="ISO7816"
+                val="B0"/>
+            <ins
+                name="Read Binary"
+                spec="ISO7816"
+                val="B1"/>
+            <ins
+                name="Read Record"
+                spec="ISO7816"
+                val="B2"/>
+            <ins
+                name="Read Record"
+                spec="ISO7816"
+                val="B3"/>
+            <ins
+                name="Read Binary Stamped"
+                spec="ISO7816"
+                val="B4"/>
+            <ins
+                name="Get Response"
+                spec="ISO7816"
+                val="C0"/>
+            <ins
+                name="Envelope"
+                spec="ISO7816"
+                val="C2"/>
+            <ins
+                name="Envelope"
+                spec="ISO7816"
+                val="C3"/>
+            <ins
+                name="Load Key File Lock Manage Channel"
+                spec="ISO7816"
+                val="D8"/>
+            <ins
+                name="Get Data"
+                spec="ISO7816"
+                val="CA"/>
+            <ins
+                name="Get Data"
+                spec="ISO7816"
+                val="CB"/>
+            <ins
+                name="Write Binary"
+                spec="ISO7816"
+                val="D0"/>
+            <ins
+                name="Write Binary"
+                spec="ISO7816"
+                val="D1"/>
+            <ins
+                name="Write Record"
+                spec="ISO7816"
+                val="D2"/>
+            <ins
+                name="Update Binary"
+                spec="ISO7816"
+                val="D6"/>
+            <ins
+                name="Update Binary"
+                spec="ISO7816"
+                val="D7"/>
+            <ins
+                name="Put Data"
+                spec="ISO7816"
+                val="DA"/>
+            <ins
+                name="Put Data"
+                spec="ISO7816"
+                val="DB"/>
+            <ins
+                name="Update Record"
+                spec="ISO7816"
+                val="DC"/>
+            <ins
+                name="Update Record"
+                spec="ISO7816"
+                val="DD"/>
+            <ins
+                name="Create File"
+                spec="ISO7816"
+                val="E0"/>
+            <ins
+                name="Append Record"
+                spec="ISO7816"
+                val="E2"/>
+            <ins
+                name="Delete File"
+                spec="ISO7816"
+                val="E4"/>
+            <ins
+                name="Terminate DF"
+                spec="ISO7816"
+                val="E6"/>
+            <ins
+                name="Terminate EF"
+                spec="ISO7816"
+                val="E8"/>
+            <ins
+                name="Get Status"
+                spec="ISO7816"
+                val="F2"/>
+            <ins
+                name="Terminate Card"
+                spec="ISO7816"
+                val="FE"/>
+        </class>
+        <class val="1">
+            <ins
+                name="Deactivate File"
+                spec="TS51.011"
+                val="4"/>
+            <ins
+                name="Card Block"
+                spec="EMV"
+                val="16"/>
+            <ins
+                name="Application Unblock"
+                spec="EMV"
+                val="18"/>
+            <ins
+                name="Application Block"
+                spec="EMV"
+                val="1E"/>
+            <ins
+                name="Verify PIN"
+                spec="TS51.011"
+                val="20"/>
+            <ins
+                name="Change PIN"
+                spec="TS51.011"
+                val="24"/>
+            <ins
+                name="Disable PIN"
+                spec="TS51.011"
+                val="26"/>
+            <ins
+                name="Enable PIN"
+                spec="TS51.011"
+                val="28"/>
+            <ins
+                name="Unblock PIN"
+                spec="TS51.011"
+                val="2C"/>
+            <ins
+                name="Decrease"
+                spec="EN726"
+                val="30"/>
+            <ins
+                name="Increase"
+                spec="TS51.011"
+                val="32"/>
+            <ins
+                name="Decrease Stamped"
+                spec="EN726"
+                val="34"/>
+            <ins
+                name="Increase Stamped"
+                spec="EN726"
+                val="36"/>
+            <ins
+                name="Rehabilitate"
+                spec="TS51.011"
+                val="44"/>
+            <ins
+                name="Initialize IEP"
+                spec="EN1546"
+                val="50">
+                <p1
+                    name="Initialize For Load"
+                    spec="PBOC"
+                    val="0"/>
+                <p1
+                    name="Initialize For Purchase"
+                    spec="PBOC"
+                    val="1"/>
+                <p1
+                    name="Initialize For Cash Withdraw"
+                    spec="PBOC"
+                    val="2"/>
+                <p1
+                    name="Initialize For CAPP Purchase"
+                    spec="PBOC"
+                    val="3"/>
+                <p1
+                    name="Initialize For Update"
+                    spec="PBOC"
+                    val="4"/>
+                <p1
+                    name="Initialize For Unload"
+                    spec="PBOC"
+                    val="5"/>
+            </ins>
+            <ins
+                name="Credit IEP"
+                spec="EN1546"
+                val="52"/>
+            <ins
+                name="Debit IEP"
+                spec="EN1546"
+                val="54">
+                <p1
+                    name="Debit For Purchase"
+                    spec="PBOC"
+                    val="1"/>
+                <p1
+                    name="Debit For Unload"
+                    spec="PBOC"
+                    val="3"/>
+            </ins>
+            <ins
+                name="Convert IEP Currency"
+                spec="EN1546"
+                val="56"/>
+            <ins
+                name="Update IEP Parameter"
+                spec="EN1546"
+                val="58">
+                <p1
+                    name="Update Overdraw Limit"
+                    spec="PBOC"
+                    val="0"/>
+            </ins>
+            <ins
+                name="Get Previous IEP Signature"
+                spec="EN1546"
+                val="5A">
+                <p1
+                    name="Get Transaction Prove"
+                    spec="PBOC"
+                    val="0"/>
+            </ins>
+            <ins
+                name="Get Balance"
+                spec="PBOC"
+                val="5C"/>
+            <ins
+                name="Change Pin"
+                spec="PBOC"
+                val="5E">
+                <p1
+                    name="Reload Pin"
+                    spec="PBOC"
+                    val="0"/>
+                <p1
+                    name="Change Pin"
+                    spec="PBOC"
+                    val="1"/>
+            </ins>
+            <ins
+                name="Initialize PSAM"
+                spec="EN1546"
+                val="70"/>
+            <ins
+                name="Credit PSAM"
+                spec="EN1546"
+                val="72"/>
+            <ins
+                name="PSAM Complete"
+                spec="EN1546"
+                val="74"/>
+            <ins
+                name="Initialize PSAM For Online Collection"
+                spec="EN1546"
+                val="76"/>
+            <ins
+                name="PSAM Collect"
+                spec="EN1546"
+                val="78"/>
+            <ins
+                name="PSAM Collect"
+                spec="EN1546"
+                val="7A">
+                <P1
+                    name="Initialize For Grey Lock"
+                    spec="PBOC"
+                    val="8"/>
+                <P1
+                    name="Initialize For Grey Unlock"
+                    spec="PBOC"
+                    val="9"/>
+            </ins>
+            <ins
+                name="Initialize PSAM For Offline Collection"
+                spec="EN1546"
+                val="7C">
+                <P1
+                    name="Grey Lock"
+                    spec="PBOC"
+                    val="8"/>
+            </ins>
+            <ins
+                name="PSAM Verify Collection"
+                spec="EN1546"
+                val="7E">
+                <P1
+                    name="Debit For Unlock"
+                    spec="PBOC"
+                    val="8"/>
+                <P1
+                    name="Grey Unlock"
+                    spec="PBOC"
+                    val="9"/>
+            </ins>
+            <ins
+                name="Initialize PSAM For Update Install Internal Authenticate"
+                spec="EN1546"
+                val="80"/>
+            <ins
+                name="Issuer Authenticate"
+                spec="EMV-2"
+                val="82"/>
+            <ins
+                name="Ask Random"
+                spec="EN726"
+                val="84"/>
+            <ins
+                name="Give Random"
+                spec="EN726"
+                val="86"/>
+            <ins
+                name="Run GSM Algorithm"
+                spec="TS51.011"
+                val="88"/>
+            <ins
+                name="Seek"
+                spec="TS51.011"
+                val="A2"/>
+            <ins
+                name="Select"
+                spec="TS51.011"
+                val="A4"/>
+            <ins
+                name="Get Processing Options"
+                spec="EMV"
+                val="A8"/>
+            <ins
+                name="Close Application"
+                spec="EN726"
+                val="AC"/>
+            <ins
+                name="Generate Authorisation Cryptogram"
+                spec="EMV"
+                val="AE"/>
+            <ins
+                name="Read Binary"
+                spec="TS51.011"
+                val="B0"/>
+            <ins
+                name="Read Record"
+                spec="TS51.011"
+                val="B2"/>
+            <ins
+                name="Read Record Stamped"
+                spec="EN726"
+                val="B6"/>
+            <ins
+                name="Get Response"
+                spec="TS51.011"
+                val="C0"/>
+            <ins
+                name="Envelope"
+                spec="EN726"
+                val="C2"/>
+            <ins
+                name="Get Data"
+                spec="PBOC"
+                val="CA"/>
+            <ins
+                name="Extend"
+                spec="EN726"
+                val="D4"/>
+            <ins
+                name="Load Key File Lock Manage Channel"
+                spec="OP"
+                val="D8"/>
+            <ins
+                name="Update CAPP Data Cache"
+                spec="OP"
+                val="DC"/>
+            <ins
+                name="Create Record"
+                spec="EN726"
+                val="E2"/>
+            <ins
+                name="Delete"
+                spec="OP"
+                val="E4"/>
+            <ins
+                name="Initialize Psam For Update Install Internal Authenticate"
+                spec="EN1546"
+                val="E6"/>
+            <ins
+                name="Load"
+                spec="OP"
+                val="E8"/>
+            <ins
+                name="Set Status"
+                spec="OP"
+                val="F0"/>
+            <ins
+                name="Get Status"
+                spec="OP"
+                val="F2"/>
+            <ins
+                name="Sleep"
+                spec="TS51.011"
+                val="FA"/>
+        </class>
+    </cmds>
+    <sws>
+        <sw1
+            name="More data"
+            val="61"/>
+        <sw1
+            name="State of non-volatile memory unchanged"
+            val="62">
+            <sw2
+                name="NV-Ram not changed"
+                val="1"/>
+            <sw2
+                name="Part of returned data may be corrupted"
+                val="81"/>
+            <sw2
+                name="End of file or record reached before reading Ne bytes"
+                val="82"/>
+            <sw2
+                name="Selected file deactivated"
+                val="83"/>
+            <sw2
+                name="File control information not formatted"
+                val="84"/>
+            <sw2
+                name="Selected file in termination state"
+                val="85"/>
+            <sw2
+                name="No input data available from a sensor on the card"
+                val="86"/>
+            <sw2
+                name="Wrong R-MAC"
+                val="A2"/>
+            <sw2
+                name="Card locked"
+                val="A4"/>
+            <sw2
+                name="Wrong C-MAC"
+                val="F1"/>
+            <sw2
+                name="Internal reset"
+                val="F3"/>
+            <sw2
+                name="Default agent locked"
+                val="F5"/>
+            <sw2
+                name="Cardholder locked"
+                val="F7"/>
+            <sw2
+                name="Basement is current agent"
+                val="F8"/>
+            <sw2
+                name="CALC Key Set not unblocked"
+                val="F9"/>
+        </sw1>
+        <sw1
+            name="State of non-volatile memory changed"
+            val="63">
+            <sw2
+                name="File filled up by the last write"
+                val="81"/>
+            <sw2
+                name="Card key not supported"
+                val="82"/>
+            <sw2
+                name="Reader key not supported"
+                val="83"/>
+            <sw2
+                name="Plaintext transmission not supported"
+                val="84"/>
+            <sw2
+                name="Secured transmission not supported"
+                val="85"/>
+            <sw2
+                name="Volatile memory is not available"
+                val="86"/>
+            <sw2
+                name="Non-volatile memory is not available"
+                val="87"/>
+            <sw2
+                name="Key number not valid"
+                val="88"/>
+            <sw2
+                name="Key length is not correct"
+                val="89"/>
+            <sw2
+                name="Verify fail, no try left"
+                val="C0"/>
+            <sw2
+                name="Verify fail, 1 try left"
+                val="C1"/>
+            <sw2
+                name="Verify fail, 2 tries left"
+                val="C2"/>
+            <sw2
+                name="Verify fail, 3 tries left"
+                val="C3"/>
+        </sw1>
+        <sw1
+            name="Execution error"
+            val="64">
+            <sw2
+                name="Command timeout"
+                val="1"/>
+        </sw1>
+        <sw1
+            name="Execution error"
+            val="65">
+            <sw2
+                name="Write error"
+                val="1"/>
+            <sw2
+                name="Memory failure"
+                val="81"/>
+        </sw1>
+        <sw1
+            name="Security issues"
+            val="66">
+            <sw2
+                name="Incorrect Encryption/Decryption Padding"
+                val="69"/>
+        </sw1>
+        <sw1
+            name="Wrong length"
+            val="67"/>
+        <sw1
+            name="CLA not supported"
+            val="68">
+            <sw2
+                name="Logical channel not supported"
+                val="81"/>
+            <sw2
+                name="Secure messaging not supported"
+                val="82"/>
+            <sw2
+                name="Last command of the chain expected"
+                val="83"/>
+            <sw2
+                name="Command chaining not supported"
+                val="84"/>
+        </sw1>
+        <sw1
+            name="Command not allowed"
+            val="69">
+            <sw2
+                name="Invalid CLA"
+                val="0"/>
+            <sw2
+                name="Invalid status"
+                val="1"/>
+            <sw2
+                name="Command incompatible with file structure"
+                val="81"/>
+            <sw2
+                name="Security status not satisfied"
+                val="82"/>
+            <sw2
+                name="Authentication method blocked"
+                val="83"/>
+            <sw2
+                name="Reference data not usable"
+                val="84"/>
+            <sw2
+                name="Conditions of use not satisfied"
+                val="85"/>
+            <sw2
+                name="Command not allowed (no current EF)"
+                val="86"/>
+            <sw2
+                name="Expected secure messaging data objects missing"
+                val="87"/>
+            <sw2
+                name="Incorrect secure messaging data objects"
+                val="88"/>
+            <sw2
+                name="Data must be updated again"
+                val="96"/>
+            <sw2
+                name="Permission denied"
+                val="F0"/>
+            <sw2
+                name="Permission denied"
+                val="F1"/>
+        </sw1>
+        <sw1
+            name="Wrong P1-P2"
+            val="6A">
+            <sw2
+                name="Incorrect parameters in the command data field"
+                val="80"/>
+            <sw2
+                name="Function not supported"
+                val="81"/>
+            <sw2
+                name="File or application not found"
+                val="82"/>
+            <sw2
+                name="Record not found"
+                val="83"/>
+            <sw2
+                name="Not enough memory space in the file"
+                val="84"/>
+            <sw2
+                name="Nc inconsistent with TLV structure"
+                val="85"/>
+            <sw2
+                name="Incorrect parameters P1-P2"
+                val="86"/>
+            <sw2
+                name="Nc inconsistent with parameters P1-P2"
+                val="87"/>
+            <sw2
+                name="Referenced data or reference data not found"
+                val="88"/>
+            <sw2
+                name="File already exists"
+                val="89"/>
+            <sw2
+                name="DF name already exists"
+                val="8A"/>
+        </sw1>
+        <sw1
+            name="Wrong P1-P2"
+            val="6B"/>
+        <sw1
+            name="Wrong Le Field"
+            val="6C"/>
+        <sw1
+            name="INS Not Supported"
+            val="6D"/>
+        <sw1
+            name="CLA Not Supported"
+            val="6E"/>
+        <sw1
+            name="Internal exception"
+            val="6F">
+            <sw2
+                name="Command aborted"
+                val="0"/>
+            <sw2
+                name="Card dead"
+                val="FF"/>
+        </sw1>
+        <sw1
+            name="Normal"
+            val="90">
+            <sw2
+                name="OK"
+                val="0"/>
+            <sw2
+                name="PIN not successfully verified, 3 or more PIN tries left"
+                val="4"/>
+            <sw2
+                name="Key/file not found"
+                val="8"/>
+            <sw2
+                name="Unblock Try Counter has reached zero"
+                val="80"/>
+        </sw1>
+        <sw1
+            name="Wrapping of native DESFire APDUs"
+            val="91">
+            <sw2
+                name="OK"
+                val="0"/>
+            <sw2
+                name="States has wrong value"
+                val="1"/>
+            <sw2
+                name="Transaction number reached its limit"
+                val="2"/>
+            <sw2
+                name="No changes"
+                val="0C"/>
+            <sw2
+                name="Insufficient NV-Memory to complete command"
+                val="0E"/>
+            <sw2
+                name="Command code not supported"
+                val="1C"/>
+            <sw2
+                name="CRC or MAC does not match data"
+                val="1E"/>
+            <sw2
+                name="Invalid key number specified"
+                val="40"/>
+            <sw2
+                name="Length of command string invalid"
+                val="7E"/>
+            <sw2
+                name="Not allow the requested command"
+                val="9D"/>
+            <sw2
+                name="Value of the parameter invalid"
+                val="9E"/>
+            <sw2
+                name="Requested AID not present on PICC"
+                val="A0"/>
+            <sw2
+                name="Unrecoverable error within application"
+                val="A1"/>
+            <sw2
+                name="Authentication status does not allow the requested command"
+                val="AE"/>
+            <sw2
+                name="Additional data frame is expected to be sent"
+                val="AF"/>
+            <sw2
+                name="Out of boundary"
+                val="BE"/>
+            <sw2
+                name="Unrecoverable error within PICC"
+                val="C1"/>
+            <sw2
+                name="Previous Command was not fully completed"
+                val="CA"/>
+            <sw2
+                name="PICC was disabled by an unrecoverable error"
+                val="CD"/>
+            <sw2
+                name="Number of Applications limited to 28"
+                val="CE"/>
+            <sw2
+                name="File or application already exists"
+                val="DE"/>
+            <sw2
+                name="Could not complete NV-write operation due to loss of power"
+                val="EE"/>
+            <sw2
+                name="Specified file number does not exist"
+                val="F0"/>
+            <sw2
+                name="Unrecoverable error within file"
+                val="F1"/>
+        </sw1>
+        <sw1
+            name="Writing to EEPROM"
+            val="92">
+            <sw2
+                name="Insufficient memory"
+                val="10"/>
+            <sw2
+                name="Writing to EEPROM not successful"
+                val="40"/>
+        </sw1>
+        <sw1
+            name="Integrity error"
+            val="93">
+            <sw2
+                name="Wrong MAC"
+                val="2"/>
+            <sw2
+                name="Application has been locked"
+                val="3"/>
+        </sw1>
+        <sw1
+            name="No EF selected"
+            val="94">
+            <sw2
+                name="Candidate currency code does not match purse currency"
+                val="1"/>
+            <sw2
+                name="Candidate amount too high"
+                val="2"/>
+            <sw2
+                name="Key not found"
+                val="3"/>
+            <sw2
+                name="Key not found"
+                val="4"/>
+            <sw2
+                name="Problems in the data field"
+                val="5"/>
+            <sw2
+                name="Bad MAC"
+                val="6"/>
+            <sw2
+                name="Bad currency"
+                val="7"/>
+            <sw2
+                name="Selected file type does not match command"
+                val="8"/>
+        </sw1>
+        <sw1
+            name="Key error"
+            val="97">
+            <sw2
+                name="PIN blocked and Unblock Try Counter is 1 or 2"
+                val="0"/>
+            <sw2
+                name="Main keys are blocked"
+                val="2"/>
+            <sw2
+                name="PIN not successfully verified, 3 or more PIN tries left"
+                val="4"/>
+            <sw2
+                name="Base key"
+                val="84"/>
+            <sw2
+                name="Limit exceeded - C-MAC key"
+                val="85"/>
+            <sw2
+                name="SM error - Limit exceeded - R-MAC key"
+                val="86"/>
+            <sw2
+                name="Limit exceeded - sequence counter"
+                val="87"/>
+            <sw2
+                name="Limit exceeded - R-MAC length"
+                val="88"/>
+            <sw2
+                name="Service not available"
+                val="89"/>
+        </sw1>
+        <sw1
+            name="Wrong P1-P2"
+            val="98">
+            <sw2
+                name="No PIN defined"
+                val="2"/>
+            <sw2
+                name="Access conditions not satisfied, authentication failed"
+                val="4"/>
+            <sw2
+                name="ASK RANDOM or GIVE RANDOM not executed"
+                val="35"/>
+            <sw2
+                name="PIN verification not successful"
+                val="40"/>
+            <sw2
+                name="INCREASE or DECREASE could not be executed because a limit has been reached"
+                val="50"/>
+        </sw1>
+        <sw1
+            name="More data"
+            val="9F"/>
+    </sws>
+</apdu>

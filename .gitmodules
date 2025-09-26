@@ -1,3 +1,0 @@
-[submodule "emv/emv-utils"]
-	path = emv/emv-utils
-	url = https://github.com/openemv/emv-utils.git
